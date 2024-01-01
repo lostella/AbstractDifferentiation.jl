@@ -298,7 +298,7 @@ end
 """
     AD.value_and_pullback_function(ab::AD.AbstractBackend, f, xs...)
 
-Return a function that, given cotangents `ts`, computes the tuple `(v, p)` of the function value `v = f(xs...)` and the output `p` of the pullback function `AD.pullback_function(ab, f, xs...)` applied to `ts`.
+Return a tuple containing the function value `v = f(xs...)` and function that, given cotangents `ts`, computes the output `AD.pullback_function(ab, f, xs...)` applied to `ts`.
 
 See also [`AbstractDifferentiation.pullback_function`](@ref).
 """
